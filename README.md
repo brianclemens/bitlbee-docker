@@ -1,4 +1,5 @@
 ## BitlBee, fully loaded.
+[![Travis CI status badge](https://api.travis-ci.org/brianclemens/bitlbee-docker.svg?branch=master)](https://travis-ci.org/brianclemens/bitlbee-docker)
 ![Docker Pulls](https://img.shields.io/docker/pulls/bclemens/bitlbee.svg) ![Docker Stars](https://img.shields.io/docker/stars/bclemens/bitlbee.svg) [![Size](https://images.microbadger.com/badges/image/bclemens/bitlbee.svg)](https://microbadger.com/images/bclemens/bitlbee) [![](https://images.microbadger.com/badges/commit/bclemens/bitlbee.svg)](https://microbadger.com/images/bclemens/bitlbee)
 
 BitlBee, with LDAP, OTR, Purple, and support for:

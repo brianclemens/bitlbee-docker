@@ -1,0 +1,17 @@
+sudo: required
+
+language: generic
+
+services:
+  - docker
+
+jobs:
+  include:
+    - name: "Main build"
+      stage: test
+      script:
+        - mount_dir=$(mktemp -d)
+        - docker build -t bitlbee:main .
+        - docker run --user "$UID" -v "${mount_dir}:/bitlbee-data" -d -p 6667:6667 --name main bitlbee:main
+        - sleep 3
+        - curl -sL -m 1 localhost:6667 | grep "BitlBee-IRCd initialized"
